@@ -1,0 +1,25 @@
+'''
+When signing up to a new service, users are often asked to type a new password choice in again to verify that it matches the first one.
+
+In Joe's website, he wants to be super sure that the user has not made a mistake so he asks for the password three times.
+
+Input the password three times and output:
+
+OK if all three passwords are the same
+BOTH MISMATCH if both the second and third passwords are different to the first
+ENTRY 2 MISMATCH if only the second password is different to the first
+ENTRY 3 MISMATCH if only the third password is different to the first
+'''
+
+word1 = str(input())
+word2 = str(input())
+word3 = str(input())
+
+if word1 == word2 and word1 == word3:
+  print("OK")
+elif word1 != word2 and word1 != word3:
+  print("BOTH MISMATCH")
+elif word1 != word2:
+  print("ENTRY 2 MISMATCH")
+else:
+  print("ENTRY 3 MISMATCH")
