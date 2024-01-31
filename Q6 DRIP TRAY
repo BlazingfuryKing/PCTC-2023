@@ -1,0 +1,28 @@
+'''
+Not content with paying café prices, Eric has instead bought himself a second-hand milkshake machine. 
+
+Unfortunately, it isn't fully working and instead issues a random number of units of milkshake between 1 and 5 inclusive each time he presses the button.
+
+Eric's glass holds 12 units altogether. He likes his glass to be full, so he keeps pressing the button until it is.
+
+This often results in some overspill into the drip tray.
+
+Jeremy has a deal with Eric that he can always have any milkshake that spills into the drip tray.
+
+Repeatedly input the number of units of milkshake dispensed until Eric's cup is full.
+
+Output the number of overflowed units of milkshake that Jeremy gets to drink from the drip tray.
+
+Input Format
+A sequence of positive whole numbers 1 to 5, each on a separate line
+
+Output Format
+A single non-negative whole number
+'''
+
+eCup = 0
+while eCup < 12:
+  cup = int(input())
+  eCup = eCup + cup
+
+print(eCup-12)
