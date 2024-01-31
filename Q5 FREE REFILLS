@@ -1,0 +1,24 @@
+'''
+Your local cafe offers any number of free refills on tea and coffee but not on hot chocolate.
+
+Input your choice of drink using the codes:
+
+t for tea
+c for coffee
+h for hot chocolate
+If the first input is t or c then also input the (whole) number of additional refills that you want.
+
+Output the total number of drinks that you will have.
+
+Note: a second input will only be provided if the first input is t or c.
+
+'''
+
+drink = str(input())
+
+if drink == "t" or drink == "c":
+  while drink == "t" or drink == "c":
+    refill = int(input())
+    print(1+refill)
+else:
+  print(1)
