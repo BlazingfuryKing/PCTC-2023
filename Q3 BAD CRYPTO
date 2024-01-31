@@ -1,0 +1,15 @@
+'''
+Molly has a 6 letter secret code-word that she wants to write down but is worried that her brother will find it.
+
+Molly thinks it would be enough to fool her brother (who isn't very old) if she takes the last two letters off the end of the word and puts them at the start.
+
+For example, if her word was "SECRET" she would move the last two letters (ET) to the front to get "ETSECR".
+
+Unfortunately for Molly, her brother has employed you to write a program to decrypt the word.
+
+Input the 6-letter encrypted word and output the decrypted version.
+
+'''
+
+word = str(input())
+print(word[2:]+word[:2])
