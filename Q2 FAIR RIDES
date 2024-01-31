@@ -1,0 +1,12 @@
+'''
+The annual town fair has arrived and all the rides cost the same amount of money: a whole number of pounds.
+
+Jamal has been given some money by his parents  (also a whole number of pounds). He wants to know how many rides he could go on.
+
+Input the amount of money that Jamal has been given and the cost of a ride and output the number of rides that he can go on as a whole number.
+
+'''
+
+money_given = int(input())
+cost_per_ride = int(input())
+print(money_given//cost_per_ride)
